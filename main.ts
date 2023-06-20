@@ -54,7 +54,7 @@ function crossRotate(go: number) {
     if (go == 1) {
         rotate(-114, -128)
     } else if (go == 2) {
-        rotate(160, 114)
+        rotate(128, 114)
     } else {
         PCAmotor.MotorStopAll()
         rotate(60, -60)
@@ -81,7 +81,7 @@ function getSenzors(): senzors {
 basic.forever(function () {
     if (paused) return
     if (sonar.ping(DigitalPin.P2, DigitalPin.P1, PingUnit.Centimeters) < 5) {
-        rotate(128, 114)
+        rotate(160, 114)
         basic.pause(1050)
         PCAmotor.MotorStopAll()
     } else if (autoModeEnabled) {
