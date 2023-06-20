@@ -54,7 +54,7 @@ function crossRotate(go: number) {
     if (go == 1) {
         rotate(-114, -128)
     } else if (go == 2) {
-        rotate(128, 114)
+        rotate(160, 114)
     } else {
         PCAmotor.MotorStopAll()
         rotate(60, -60)
